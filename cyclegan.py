@@ -297,5 +297,5 @@ n_epochs = 4000
 
 losses = training_loop(dataloader_X, dataloader_Y, test_dataloader_X, test_dataloader_Y, n_epochs=n_epochs)
 
-torch.save(G_XtoY, 'drive/MyDrive/1_sum_wint.pth')
-torch.save(G_YtoX, 'drive/MyDrive/1_wint_sum.pth')
+torch.save(G_XtoY.state_dict(), 'drive/MyDrive/weights_sum_wint.pth')
+torch.save(G_YtoX.state_dict(), 'drive/MyDrive/weights_wint_sum.pth')
